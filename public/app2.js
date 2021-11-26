@@ -1,5 +1,3 @@
-//var colors = document.querySelector(".byColor");
-//var makes = document.querySelector(".byMake");
 var show = document.querySelector(".display");
 var btn = document.querySelector(".show");
 
