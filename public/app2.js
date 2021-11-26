@@ -13,7 +13,7 @@ btn.addEventListener('click', function () {
 
     if (colors && !makes) {
 
-        axios.get(`http://api-tutor.herokuapp.com/v1/cars/color/${colors}`)
+        axios.get(`https://api-tutor.herokuapp.com/v1/cars/color/${colors}`)
             .then(function (element) {
                 show.innerHTML = userTemplate2({
                     all: element.data
@@ -22,7 +22,7 @@ btn.addEventListener('click', function () {
 
     } else if (makes && !colors) {
 
-        axios.get(`http://api-tutor.herokuapp.com/v1/cars/make/${makes}`)
+        axios.get(`https://api-tutor.herokuapp.com/v1/cars/make/${makes}`)
             .then(function (element) {
                 show.innerHTML = userTemplate2({
                     all: element.data
@@ -31,7 +31,7 @@ btn.addEventListener('click', function () {
 
     } else if (colors && makes) {
 
-        axios.get(`http://api-tutor.herokuapp.com/v1/cars/make/${makes}/color/${colors}`)
+        axios.get(`https://api-tutor.herokuapp.com/v1/cars/make/${makes}/color/${colors}`)
             .then(function (element) {
                 show.innerHTML = userTemplate2({
                     all: element.data

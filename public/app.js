@@ -7,21 +7,21 @@ var userTemplate = Handlebars.compile(templateSource.innerHTML);
 
 
 
-axios.get("http://api-tutor.herokuapp.com/v1/colors")
+axios.get("https://api-tutor.herokuapp.com/v1/colors")
     .then(function (element) {
         carColors.innerHTML = userTemplate({
             colors: element.data
         });
     });
 
-    axios.get("http://api-tutor.herokuapp.com/v1/makes")
+    axios.get("https://api-tutor.herokuapp.com/v1/makes")
     .then(function (element) {
         carMakes.innerHTML = userTemplate({
             colors: element.data
         });
     });
 
-    axios.get("http://api-tutor.herokuapp.com/v1/cars")
+    axios.get("https://api-tutor.herokuapp.com/v1/cars")
     .then(function (element) {
         allCars.innerHTML = userTemplate({
             cars: element.data
